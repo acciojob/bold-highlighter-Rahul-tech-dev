@@ -1,10 +1,10 @@
 let strong=document.querySelectorAll("strong");
-
+let a=document.querySelector("a");
 function highlight() {
     //Write your code here
     
      strong.forEach((item) => {
-        item.addEventListener("mouseover",() => {
+        a.addEventListener("mouseover",() => {
             item.style.color="rgb(0, 128, 0)"
         });
      });
@@ -15,7 +15,7 @@ function highlight() {
 function return_normal() {
     //Write your code here
       strong.forEach((item) => {
-        item.addEventListener("mouseout",() => {
+        a.addEventListener("mouseout",() => {
             item.style.color="rgb(0, 0, 0)";
         });
      });
